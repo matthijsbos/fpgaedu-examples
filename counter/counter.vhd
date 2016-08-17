@@ -31,8 +31,8 @@ architecture MyHDL of counter is
 
 
 
-signal counter: unsigned(7 downto 0);
-signal count_num: unsigned(7 downto 0);
+signal counter: unsigned(25 downto 0);
+signal count_num: unsigned(25 downto 0);
 
 begin
 
@@ -45,9 +45,9 @@ COUNTER_LOGIC: process (clk) is
 begin
     if rising_edge(clk) then
         if bool(reset) then
-            counter <= to_unsigned(0, 8);
+            counter <= to_unsigned(0, 26);
         elsif bool(en) then
-            counter <= ((counter + 1) mod 256);
+            counter <= ((counter + 1) mod 2**26);
         end if;
     end if;
 end process COUNTER_LOGIC;
