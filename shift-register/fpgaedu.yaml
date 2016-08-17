@@ -1,0 +1,6 @@
+title: counter
+description: A simple 8-bit shift register.
+url: https://github.com/matthijsbos/fpgaedu-examples
+vhdlFiles:
+    - shift-register.vhd
+topLevelFile: ./shift-register.vhd
