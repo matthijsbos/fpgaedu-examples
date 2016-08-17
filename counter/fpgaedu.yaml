@@ -1,0 +1,7 @@
+title: counter
+description: A simple 25-bit counter with an enable signal.
+url: https://github.com/matthijsbos/fpgaedu-examples
+vhdlFiles:
+    - counter.vhd
+    - pck_myhdl_090.vhd
+topLevelFile: ./counter.vhd
